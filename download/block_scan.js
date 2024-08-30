@@ -13,10 +13,8 @@ function inArray(search, array){
 }
 
 (async() =>{
-    // chainstack node wss://ws-nd-336-912-929.p2pify.com/3a3cb3f742be775d03d4d0a440053120
-    // alchemy node wss://eth-mainnet.g.alchemy.com/v2/Q0itxBQlh0ghyu57EvbMSfSBQaNMZGTf
-    // infura node wss://mainnet.infura.io/ws/v3/20fcbf4e84754d45b45f87928958ba3e
-    const web3 = new Web3(new Web3.providers.WebsocketProvider('wss://eth-mainnet.g.alchemy.com/v2/Q0itxBQlh0ghyu57EvbMSfSBQaNMZGTf'))
+
+    const web3 = new Web3(new Web3.providers.WebsocketProvider('wss://eth-mainnet.g.alchemy.com/v2/'))
 
     // 监听aave合约的新borrow活动
     const uniswapV2Factory = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
